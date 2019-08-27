@@ -6,8 +6,15 @@
 import math as M
 import Heaps_Basic as heap  ## File where insert(), extractMin() and extractMax() functions are defined
 
+## The 'H_low' heap.
+## Contains the smaller half of data stream received.
+## Supports EXTRACT MAX operation
 hL = []
-hH = []
+
+## The 'H_high' heap.
+## Contains the greater half of data stream received.
+## Supports EXTRACT MIN operation
+hH = [] 
 
 def getMedian(num, val):
     global hL, hH
